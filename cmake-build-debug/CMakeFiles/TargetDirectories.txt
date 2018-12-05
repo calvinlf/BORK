@@ -1,0 +1,3 @@
+C:/Users/CalPC/Projects/BORK/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/CalPC/Projects/BORK/cmake-build-debug/CMakeFiles/BORK.dir
+C:/Users/CalPC/Projects/BORK/cmake-build-debug/CMakeFiles/edit_cache.dir

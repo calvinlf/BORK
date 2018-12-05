@@ -1,0 +1,87 @@
+room 0
+room>bedroom
+This is where I live. There is a door to the West. If you bring all the pennies here you will win.
+i toothpick>toothpicker>t-pick A small sliver of wood you can stick in your teeth. * You clean your teeth, nice. * use 1
+i door>door.to.the.west A door, you can go through it by going west. * if you see this you did something wrong * use 200
+i bed Your bed. Presumably you just got out of it. * if you see this you did something wrong * use 200
+i desk You could study here at this wood desk, but you don't want to. * if you see this you did something wrong * use 200
+e 1 W>west
+.
+room 1
+room>living room
+This room is outside of your bedroom. There is a door to outside in front of you.
+i tv>television A TV that you could use to watch TV if you could see, but this is text based so sorry. * You picked it up, so it's not plugged in. * watch>view 40
+i alexa>ai Cam's Alexa, he'll be upset if you take it. * Alexa tells you what you want to hear. * use>play 10
+i couch>seat It's a little stained. * if you see this you did something wrong * use 200
+e 0 E>east
+e 2 W>west
+.
+room 2
+balcony>outside
+You are on a balcony on 225 E 700 N. You can go North to get to BYU.
+e 1 E>east
+e 3 N>north
+.
+room 3
+intersection>street>road
+This is the intersection of 800 N and 200 E, if you are going to cross the street and go up the path to the Northeast(NE), be careful.
+e 2 S>south
+e 4 NE>northeast
+e 5 E>east
+e 6 W>west
+.
+room 4
+path>sidewalk
+The path forks crosses a set of stairs going going North and South, but the north-ish part of the simulation isn't developed yet, sorry.
+i twig>stick A small piece, of wood. Not very useful * You can't use that here * use 1
+e 3 SW>southeast
+e 5 S>south
+.
+room 5
+stairs>street>road
+The stairs go North and the road goes West.
+e 4 N>north
+e 3 W>west
+.
+room 6
+intersection>street>road
+At this intersection you see the athletics stuff going north.
+e 3 E>east *
+.
+STOP
+^ anything after "STOP" will be ignored
+any line that starts with "." is a comment
+
+template-
+
+room <room index number>
+name1>name2    // you need at least 2 names
+e roomIndexOfPossibleName name1 name2 name3 *        //as many as you want
+
+
+
+
+
+    theMap.push_back(Room({"room", "bedroom"}, "This is where I live. There is a door to the West."));
+    theMap.at(0).addItem(new Item({"toothpick", "toothpicker", "t-pick"}, "A small sliver of wood you can stick in your teeth", "You clean your teeth, nice.",{"use"}));
+    theMap.at(0).addExit({"W","west"}, 1);
+    theMap.push_back(Room({"room"}, "This Room is outside of your bedroom. There is a door to outside in front of you."));
+    theMap.at(1).addItem(new Item({"die", "the die", "rolling cube"}, "A cube with black dots on it.", "You got a 6!", {"use","roll", "toss"}));
+    theMap.at(1).addItem(new Item({"dirty dishes", "dishes"}, "Dirty dishes- why on earth did you pick these up?", "They just take up space", {"clean", "wash"}));
+    theMap.at(1).addExit({"E","east"}, 0);
+    theMap.at(1).addExit({"W","west"}, 2);
+    theMap.push_back(Room({"balcony"}, "You are on a balcony on 225 E 700 N. You can go North to get to BYU"));
+    theMap.at(2).addExit({"E","east"}, 1);
+    theMap.at(2).addExit({"N","north"}, 3);
+    theMap.push_back(Room({"intersection", "street", "road"}, "This is the intersection of 800 N and 200 E, if you are going to cross the street and go up the path to the Northeast(NE), be careful"));
+    theMap.at(3).addItem(new Item({"penny", "coin"}, "Abe's a bit scratched, but still worth 1 cent.", "It's not really worth anything, maybe if you find a lot of them, sorry", {"spend", "trade"}));
+    theMap.at(3).addExit({"S", "south"}, 2);
+    theMap.at(3).addExit({"NE","northeast"}, 4);
+    theMap.at(3).addExit({"E","east"}, 5);
+    theMap.at(3).addExit({"W","west"}, 6);
+    theMap.push_back(Room({"path"},"The path forks here, going North, South and NorthEast, but the north-ish part of the simulation isn't developed yet, sorry."));
+    theMap.at(4).addExit({"SW","southeast"}, 3);
+    theMap.at(4).addExit({"S", "south"}, 5);
+    theMap.push_back(Room({"stairs", "street", "road"}, "The stairs go North and the road goes West."));
+    theMap.at(5).addExit({"N","north"}, 4);
+    theMap.at(5).addExit({"W","west"}, 3);
