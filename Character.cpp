@@ -16,6 +16,7 @@ using namespace std;
 Character::Character() {
     currentRoom = 0;
     makeMap();
+    theMap.at(0).addItem(new Flier());
     theMap.at(1).addItem(new Die());
     theMap.at(1).addItem(new Dishes());
 }

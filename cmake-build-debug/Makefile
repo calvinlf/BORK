@@ -203,6 +203,33 @@ Dishes.cpp.s:
 	$(MAKE) -f CMakeFiles\BORK.dir\build.make CMakeFiles/BORK.dir/Dishes.cpp.s
 .PHONY : Dishes.cpp.s
 
+Flier.obj: Flier.cpp.obj
+
+.PHONY : Flier.obj
+
+# target to build an object file
+Flier.cpp.obj:
+	$(MAKE) -f CMakeFiles\BORK.dir\build.make CMakeFiles/BORK.dir/Flier.cpp.obj
+.PHONY : Flier.cpp.obj
+
+Flier.i: Flier.cpp.i
+
+.PHONY : Flier.i
+
+# target to preprocess a source file
+Flier.cpp.i:
+	$(MAKE) -f CMakeFiles\BORK.dir\build.make CMakeFiles/BORK.dir/Flier.cpp.i
+.PHONY : Flier.cpp.i
+
+Flier.s: Flier.cpp.s
+
+.PHONY : Flier.s
+
+# target to generate assembly for a file
+Flier.cpp.s:
+	$(MAKE) -f CMakeFiles\BORK.dir\build.make CMakeFiles/BORK.dir/Flier.cpp.s
+.PHONY : Flier.cpp.s
+
 Item.obj: Item.cpp.obj
 
 .PHONY : Item.obj
@@ -302,6 +329,9 @@ help:
 	@echo ... Dishes.obj
 	@echo ... Dishes.i
 	@echo ... Dishes.s
+	@echo ... Flier.obj
+	@echo ... Flier.i
+	@echo ... Flier.s
 	@echo ... Item.obj
 	@echo ... Item.i
 	@echo ... Item.s

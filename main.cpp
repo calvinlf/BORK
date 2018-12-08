@@ -22,6 +22,7 @@ int main() {
     string input = "";
 
     cout << "You Awake" << endl;
+    cout << "You see a leaflet on the ground." << endl;
     while (input != "quit") {
         cout << "->";
         getline(cin, input);

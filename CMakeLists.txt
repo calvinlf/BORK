@@ -3,4 +3,4 @@ project(BORK)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(BORK main.cpp Room.cpp Room.h Item.cpp Item.h Character.cpp Character.h Die.cpp Die.h Dishes.cpp Dishes.h)
+add_executable(BORK main.cpp Room.cpp Room.h Item.cpp Item.h Character.cpp Character.h Die.cpp Die.h Dishes.cpp Dishes.h Flier.cpp Flier.h)

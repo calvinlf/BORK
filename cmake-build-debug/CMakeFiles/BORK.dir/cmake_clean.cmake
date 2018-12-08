@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/BORK.dir/Character.cpp.obj"
   "CMakeFiles/BORK.dir/Die.cpp.obj"
   "CMakeFiles/BORK.dir/Dishes.cpp.obj"
+  "CMakeFiles/BORK.dir/Flier.cpp.obj"
   "BORK.pdb"
   "BORK.exe"
   "BORK.exe.manifest"
