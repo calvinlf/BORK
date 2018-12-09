@@ -13,12 +13,15 @@ This room is outside of your bedroom. There is a door to outside in front of you
 i tv>television A TV that you could use to watch TV if you could see, but this is text based so sorry. * You picked it up, so it's not plugged in. * watch>view 40
 i alexa>ai Cam's Alexa, he'll be upset if you take it. * Alexa tells you what you want to hear. * use>play 10
 i couch>seat It's a little stained. * if you see this you did something wrong * use 200
+i door.to.the.west>west.door>door A door, you can go through it by going west. It leads to outside. * if you see this you did something wrong * use 200
+i door.to.the.east>east.door>door A door, you can go through it by going east. It leads to your bedroom. * if you see this you did something wrong * use 200
 e 0 E>east
 e 2 W>west
 .
 room 2
 balcony>outside
 You are on a balcony on 225 E 700 N. You can go North to get to BYU.
+i door.to.the.east>east.door>door A door, you can go through it by going east. It leads to the living room. * if you see this you did something wrong * use 200
 e 1 E>east
 e 3 N>north
 .
@@ -38,7 +41,7 @@ e 3 SW>southeast
 e 5 S>south
 .
 room 5
-stairs>street>road
+stairs>street>road>stair
 The stairs go North and the road goes West.
 e 4 N>north
 e 3 W>west

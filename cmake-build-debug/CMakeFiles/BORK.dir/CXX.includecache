@@ -13,6 +13,8 @@ Die.h
 C:/Users/CalPC/Projects/BORK/Die.h
 Dishes.h
 C:/Users/CalPC/Projects/BORK/Dishes.h
+Flier.h
+C:/Users/CalPC/Projects/BORK/Flier.h
 vector
 -
 sstream
@@ -43,6 +45,10 @@ string
 -
 
 C:/Users/CalPC/Projects/BORK/Dishes.h
+Item.h
+C:/Users/CalPC/Projects/BORK/Item.h
+
+C:/Users/CalPC/Projects/BORK/Flier.h
 Item.h
 C:/Users/CalPC/Projects/BORK/Item.h
 

@@ -5,6 +5,7 @@
 #include "Character.h"
 #include "Die.h"
 #include "Dishes.h"
+#include "Flier.h"
 #include <vector>
 #include <sstream>
 #include <string>
@@ -193,14 +194,18 @@ void Character::act(string input) {
     string afterFirstWord = input.substr(input.find(' ') + 1);
     if (firstWord == "look" || firstWord == "where") {
         describeCurrentRoom();
-    } else if (firstWord == "hello" || firstWord == "hi") {
+    } else if (firstWord == "hello" || firstWord == "hi" || firstWord == "hey") {
         cout << "Hi" << endl;
     } else if (firstWord == "let's" || firstWord == "lets") {
         act(afterFirstWord);
+    } else if (firstWord == "thank" || firstWord == "thanks") {
+        cout << "Your welcome!" << endl;
     } else if (firstWord == "yes" || firstWord == "no" || firstWord == "maybe") {
         cout << "Maybe" << endl;
     } else if (firstWord == "quit") {
         cout << "Come again soon!" << endl;
+    } else if (firstWord == "talk") {
+        cout << "\"blah\"" << endl;
     } else if (firstWord == "jump") {
         cout << "You jump. yay." << endl;
     } else if (firstWord == "sleep") {
